@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://lib.test.ws/" version="1.0" xmlns:tns="http://lib.test.ws/">
+
+  <xs:element name="getBook" type="tns:getBook"/>
+
+  <xs:element name="getBookResponse" type="tns:getBookResponse"/>
+
+  <xs:element name="isBookExist" type="tns:isBookExist"/>
+
+  <xs:element name="isBookExistResponse" type="tns:isBookExistResponse"/>
+
+  <xs:complexType name="getBook">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="getBookResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="isBookExist">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="isBookExistResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

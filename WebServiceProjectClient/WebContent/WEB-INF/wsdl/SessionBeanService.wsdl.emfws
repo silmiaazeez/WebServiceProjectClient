@@ -1,0 +1,71 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<com.ibm.rational.test.lt.models.wscore.configuration:WSDLInformationContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rational.test.lt.models.wscore.configuration="http:///com/ibm/rational/test/lt/models/wscore/configuration.ecore">
+  <securityOperationConfiguration>
+    <SecurityPortConfiguration aliasName="DEFAULTCONFIGURATION"/>
+  </securityOperationConfiguration>
+  <keyStore/>
+  <wsdl name="SessionBeanService" key="SessionBeanService">
+    <SimpleProperty value="http://lib.test.ws/" name="WSDLPROPERTY_TARGETNAMESPACE"/>
+    <SimpleProperty value="0400373785642da6bedc95ee002ee3845b7fe42e0400373785642da6bedc95ee002ee3845b7fe42e3c52139f1e071843d7fcc5498fd867297448e1b9" name="WSDLPROPERTY_HASH"/>
+    <SimpleProperty value="0400373785642da6bedc95ee002ee3845b7fe42e0400373785642da6bedc95ee002ee3845b7fe42e3c52139f1e071843d7fcc5498fd867297448e1b9" name="WSDLPROPERTY_PREVIOUSHASH"/>
+    <SimpleProperty value="1669797218751" name="WSDLPROPERTY_SYNCHROSTAMP"/>
+    <ResourceProxy portablePath="/WebServiceProjectClient/WebContent/WEB-INF/wsdl/SessionBeanService.wsdl" timeStamp="1669797218751"/>
+    <WsdlInformationContainer versionContainer="10.1"/>
+    <WsdlBinding name="SessionBeanPortBinding">
+      <SimpleProperty value="SoapDocumentBinding" name="WSDLBINDINGPROPERTY_TYPE"/>
+      <SimpleProperty value="http://schemas.xmlsoap.org/soap/http" name="WSDLBINDINGPROPERTY_TRANSPORT_TYPE"/>
+      <SimpleProperty value="true" name="Soap11Binding"/>
+      <SimpleProperty value="false" name="Soap12Binding"/>
+      <SimpleProperty value="false" name="HttpBinding"/>
+      <SimpleProperty value="{http://lib.test.ws/}SessionBeanDelegate" name="WSDLBINDING_SERVICE_NAME"/>
+      <WsdlOperation name="getBook" key="getBook">
+        <WsdlPort name="SessionBeanPort" uniqueID="-341609965SEPARATOR22998028-d6ba-4523-bb19-bbfa3730344b">
+          <SimpleProperty value="http://localhost:9080/WebServiceProject/SessionBeanService" name="WSDLPORTPROPERTY_HTTP_URL"/>
+          <in>
+            <SimpleProperty value="DEFAULTCONFIGURATION" name="operation_security_information"/>
+          </in>
+          <out>
+            <SimpleProperty value="DEFAULTCONFIGURATION" name="operation_security_information"/>
+          </out>
+        </WsdlPort>
+        <in>
+          <SimpleProperty value="http://lib.test.ws/SessionBeanDelegate/getBookRequest" name="WSADDRESSING_ACTIVATOR"/>
+          <SimpleProperty value="literal" name="WSDLOPERATIONPROPERTY_ENCODING_STYLE"/>
+          <WsdlPart element="true" nameSpaceURI="http://lib.test.ws/" localPart="getBook" partName="parameters"/>
+        </in>
+        <SimpleProperty value="true" name="WSDLOPERATIONPROPERTY_SOAP_ACTION_REQUIRED"/>
+        <SimpleProperty value="" name="WSDLOPERATIONPROPERTY_SOAP_ACTION_URI"/>
+        <out>
+          <SimpleProperty value="http://lib.test.ws/SessionBeanDelegate/getBookResponse" name="WSADDRESSING_ACTIVATOR"/>
+          <SimpleProperty value="literal" name="WSDLOPERATIONPROPERTY_ENCODING_STYLE"/>
+          <SimpleProperty name="MESSAGENAME"/>
+          <WsdlPart element="true" nameSpaceURI="http://lib.test.ws/" localPart="getBookResponse" partName="parameters"/>
+        </out>
+      </WsdlOperation>
+      <WsdlOperation name="isBookExist" key="isBookExist">
+        <WsdlPort name="SessionBeanPort" uniqueID="-1322485652SEPARATORab59fe50-b9d5-4588-96be-8194f627b4e6">
+          <SimpleProperty value="http://localhost:9080/WebServiceProject/SessionBeanService" name="WSDLPORTPROPERTY_HTTP_URL"/>
+          <in>
+            <SimpleProperty value="DEFAULTCONFIGURATION" name="operation_security_information"/>
+          </in>
+          <out>
+            <SimpleProperty value="DEFAULTCONFIGURATION" name="operation_security_information"/>
+          </out>
+        </WsdlPort>
+        <in>
+          <SimpleProperty value="http://lib.test.ws/SessionBeanDelegate/isBookExistRequest" name="WSADDRESSING_ACTIVATOR"/>
+          <SimpleProperty value="literal" name="WSDLOPERATIONPROPERTY_ENCODING_STYLE"/>
+          <WsdlPart element="true" nameSpaceURI="http://lib.test.ws/" localPart="isBookExist" partName="parameters"/>
+        </in>
+        <SimpleProperty value="true" name="WSDLOPERATIONPROPERTY_SOAP_ACTION_REQUIRED"/>
+        <SimpleProperty value="" name="WSDLOPERATIONPROPERTY_SOAP_ACTION_URI"/>
+        <out>
+          <SimpleProperty value="http://lib.test.ws/SessionBeanDelegate/isBookExistResponse" name="WSADDRESSING_ACTIVATOR"/>
+          <SimpleProperty value="literal" name="WSDLOPERATIONPROPERTY_ENCODING_STYLE"/>
+          <SimpleProperty name="MESSAGENAME"/>
+          <WsdlPart element="true" nameSpaceURI="http://lib.test.ws/" localPart="isBookExistResponse" partName="parameters"/>
+        </out>
+      </WsdlOperation>
+    </WsdlBinding>
+  </wsdl>
+</com.ibm.rational.test.lt.models.wscore.configuration:WSDLInformationContainer>
